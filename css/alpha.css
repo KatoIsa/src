@@ -5,4 +5,9 @@
     --second-color: #00DCFF;
     --third-color: #FF4141;
     --text-color: #A29F9F;
+    
+    /* light theme colors */
+    --light-main: #EEEEEE;
+    --light-text1: #333131;
+    --light-text2: #716E6E;
 }
