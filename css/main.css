@@ -82,6 +82,7 @@ body{
 
 /* middle section: chart area / chart box */
 .chartbox {
+    box-shadow: 0px 0px 18px 7px rgba(0, 0, 0, 0.39);
     position: relative;
     display: flex;
     align-items: center;
@@ -118,4 +119,32 @@ body{
 }
 .freebutton .arrow img {
     width: 20px;
+}
+
+/* mobile responsiveness */
+@media (max-width: 835px){
+    .header .logo img{
+        display: none;
+    }
+    .mobilelogo{
+        margin-top: 50px!important;
+        display: block!important;
+        width: fit-content;
+        margin: 0px auto;
+    }
+    .mobilelogo img {
+        width: 150px;
+    }
+    .chartbox{
+        display: none;
+    }
+    .mobileChart {
+        margin-top: 50px;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileChart img {
+        width: 80%;
+    }
 }
