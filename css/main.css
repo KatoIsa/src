@@ -272,4 +272,10 @@ menu
         position: unset!important;
         margin-bottom: 50px;
     }
+    .banners {
+        gap: 0px!important;
+    }
+    .actionTitle {
+        margin-bottom: -30px!important;
+    }
 }
