@@ -7,6 +7,7 @@ const openmenu = document.querySelector('.menuButton');
 const closeButton = document.querySelector('.closebutton img');
 const menu = document.querySelector('.menu');
 const themeButton = document.querySelector('.themeButton');
+const header = document.querySelector('.header');
 
 themeButton.addEventListener('click', () => {
     alert('section under active development \n by Kato Isa');
@@ -23,3 +24,18 @@ openmenu.addEventListener('click', () =>{
 closeButton.addEventListener('click', () => {
     menu.classList.remove('toggole');
 });
+
+// scroll animation ...
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+
+    // define user scroll position threshold ...
+    const topThreshold = 50;
+    const bottomThreshold = 2000;
+
+    if(scrolled >= topThreshold && scrolled <= bottomThreshold) {
+        header.classList.add('animateheader');
+    }else{
+        header.classList.remove('animateheader');
+    }
+})

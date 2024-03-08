@@ -7,11 +7,31 @@ body{
     background: var(--main-color);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    color: var(--text-color);
+}
+h2{
+    color: #fff;
+    font-weight: bold;
+}
 /* 
 menu
 */
+.main{
+    height: 100vh;
+}
 .menu {
-    position: absolute;
+    position: fixed;
     background: #0000006e;
     width: 100%;
     top: 0px;
@@ -49,6 +69,9 @@ menu
   header section .... 
 */
 .header {
+    position: fixed;
+    z-index: 100;
+    padding: 1px;
     height: 50px;
     margin-top: 30px!important;
     color: var(--text-color);
@@ -61,6 +84,14 @@ menu
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    animation: 0.1s ease-in-out;
+}
+.animateheader {
+    background: #bbbaba1c;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
+    padding: 10px!important;
+    border-radius: 10px;
 }
 .button {
     transition: 0.1s ease-in-out ;
@@ -127,7 +158,7 @@ menu
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 30px;   
     margin: 0 auto;
     margin-top: 30px!important;
     background: var(--main-color);
@@ -162,8 +193,47 @@ menu
     width: 20px;
 }
 
+/* 
+    CALL TO ACTION: ceter section ...
+*/
+.actionTitle {
+    margin-top: 50px;
+}
+.banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top:30px;
+    justify-content: center;
+}
+.banners .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    height: 500px;
+}
+.banners .banner .bannerImage img{
+    width: 250px;
+}
+.banners .banner .button img {
+    width: 150px;
+}
+.banners .banner {
+    text-align: center;
+}
+.banners .banner p span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
 /* mobile responsiveness */
 @media (max-width: 835px){
+    .header{
+        width: 80%!important;
+    }
     .menu .menucenter {
         border-radius: unset;
         display: flex;
