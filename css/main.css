@@ -12,7 +12,6 @@ main {
     flex-direction: column;
 }
 section{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +26,6 @@ h2{
 /* 
 menu
 */
-.main{
-    height: 100vh;
-}
 .menu {
     position: fixed;
     background: #0000006e;
@@ -87,6 +83,7 @@ menu
     animation: 0.1s ease-in-out;
 }
 .animateheader {
+    border: .3px solid #ffffff3a;
     background: #bbbaba1c;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px); 
