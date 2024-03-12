@@ -31,11 +31,12 @@ window.addEventListener('scroll', () => {
 
     // define user scroll position threshold ...
     const topThreshold = 50;
-    const bottomThreshold = 2000;
+    const bottomThreshold = 20000;
 
     if(scrolled >= topThreshold && scrolled <= bottomThreshold) {
         header.classList.add('animateheader');
     }else{
         header.classList.remove('animateheader');
     }
-})
+});
+
