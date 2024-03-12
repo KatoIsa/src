@@ -230,13 +230,13 @@ menu
 /* video downloader and media player */
 
 .lessonsContainer {
+    margin-bottom: 80px;
     width: 70vw;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
 }
 .freeLessons .lessonheader {
@@ -261,9 +261,20 @@ menu
     height: 100%;
 }
 /* mobile responsiveness */
-@media (max-width: 548px){
-    .lessonsContainer{
-        gap: -10px!important;
+/* 422 */
+@media (max-width:425px) {
+    .lessonsContainer {
+        display: block;
+        margin-bottom: 150px!important;
+    }
+    .lessonsContainer .lesson:nth-child(2),.lessonsContainer .lesson:nth-child(3) {
+        margin-top: 120px;
+    }
+}
+/* 1392 */
+@media (max-width:1485px) {
+    .lessonsContainer {
+        justify-content: center!important;
     }
 }
 @media (max-width:548px){ 
@@ -272,7 +283,9 @@ menu
         height: 100px;
     }
     .lessonsContainer {
+        gap: 169px!important;
         width: 85vw;
+        justify-content: center!important;
     }
 }
 @media (max-width: 835px){
