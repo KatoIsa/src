@@ -1,0 +1,61 @@
+@import url(alpha.css);
+.logo img {
+    width: 90px!important;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+a {
+    color: var(--text-color);
+}
+.blogTitle {
+    background: #030611;
+    width: 100vw;
+    height: 270px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.blogTitle h1 {
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.blogTitle .link {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.blogTitle .link div:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--third-color);
+}
+.blogTitle .link .blogLink {
+    color: var(--second-color);
+}
+.topicsSection {
+    margin-top: 60px;
+}
+.Topictitle {
+    border-bottom:1px solid var(--text-color);
+    color: var(--text-color);
+    width: 60%;
+}
+.Topictitle h1 {
+    font-weight: light;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 835px) {
+    .header .logo img{
+        display: block!important;
+    }
+    .Topictitle {
+        width: 80%;
+    }
+}

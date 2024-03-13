@@ -24,6 +24,9 @@ h2{
     color: #fff;
     font-weight: bold;
 }
+a {
+    text-decoration: none;
+}
 /* 
 menu
 */
