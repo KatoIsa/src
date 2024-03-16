@@ -12,6 +12,43 @@ main {
     display: flex;
     flex-direction: column;
 }
+.homeSocials {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.socials {
+    display: flex;
+    gap: 10px;
+}
+.socials div {
+    border-radius: 100px;
+    background: #4444446e;
+    width: 30px;
+    height: 30px;
+    transition: 0.1s ease-in-out ;
+}
+.socials div:hover {
+    background-color: unset!important;
+    box-shadow: 0px 0px 10px 0px #02d9ff80;
+    cursor: pointer;
+    opacity: 80%;
+}
+.facebook {
+    background-image: url('../assets/icons/facebook.png')!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+.twitter {
+    background-image: url('../assets/icons/twitteer.png')!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+.youtube {
+    background-image: url('../assets/icons/yt.png')!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
 section{
     display: flex;
     flex-direction: column;
