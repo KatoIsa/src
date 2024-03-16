@@ -1,0 +1,25 @@
+
+.titleImage {
+    background: #333;
+    width: 50%;
+    height: 200px;
+    background-image: url('../assets/blog/Background1.png');
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid var(--text-color);
+}
+.blogContent {
+    width: 50%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+@media (max-width: 1024px){
+    .titleImage , .blogContent{
+        width: 60%;
+    }
+}
+@media (max-width: 835px){
+    .titleImage , .blogContent{
+        width: 80%;
+    }
+}

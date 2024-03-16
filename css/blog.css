@@ -1,7 +1,6 @@
 @import url(alpha.css);
 .logo img {
     width: 90px!important;
-    margin-top: -15px;
     margin-left: 10px;
 }
 a {
@@ -10,7 +9,8 @@ a {
 .blogTitle {
     background: #030611;
     width: 100vw;
-    height: 270px;
+    height: fit-content;
+    padding-bottom: 10px;
     text-align: center;
     color: var(--text-color);
 }
@@ -32,11 +32,12 @@ a {
     cursor: pointer;
     border-bottom: 1px solid var(--third-color);
 }
-.blogTitle .link .blogLink {
+.blogTitle .link div:nth-last-child(1) {
     color: var(--second-color);
 }
 .topicsSection {
     margin-top: 60px;
+    height: fit-content;
 }
 .Topictitle {
     border-bottom:1px solid var(--text-color);
@@ -54,7 +55,7 @@ a {
     gap: 20px;
     flex-wrap: wrap;
     width: 60%;
-    height: 50px;
+    height: fit-content;
     margin-top: 20px;
 }
 .blogContainer .blog {
